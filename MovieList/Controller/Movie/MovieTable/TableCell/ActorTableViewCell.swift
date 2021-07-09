@@ -13,11 +13,18 @@ class ActorTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    var actor:Actor?
+    @IBOutlet weak var actorName: UILabel!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+     
+        func refresh(actor:Actor){
+            self.actor=actor
+            self.actorName.text=actor.name
+        }
     
 }

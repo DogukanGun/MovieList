@@ -6,10 +6,11 @@
 //
 
 import UIKit
-
+import AlamofireImage
+import Alamofire
 class MovieTableViewCell: UITableViewCell {
    
-    var id:Int?=nil
+    var movie:Movie?
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var ImageView: UIImageView! 
     override func awakeFromNib() {
@@ -22,10 +23,14 @@ class MovieTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func refresh(movie:Movie,id:Int){
-        self.ImageView.image=movie.poster
-        self.label.text=movie.title
-        self.id=id
+    func refresh(movie:Movie){
+        self.movie=movie
+        if let url = URL(string:movie.Poster ?? ""){
+            self.ImageView.af.setImage(withURL: url)
+        }
+        
+        self.label.text=movie.Title
+        
     }
 
 }

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class Search{
+    var text:String
+    var searchButton:String
+    
+    init(text:String,searchButton:String) {
+        self.text=text
+        self.searchButton=searchButton
+    }
+}
