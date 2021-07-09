@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="109" id="KGk-i7-Jjw" customClass="MovieTableCellWithStarTableViewCell" customModule="MovieList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gp-gL-paZ">
+                        <rect key="frame" x="161" y="10" width="206" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bka-k5-EmN">
+                        <rect key="frame" x="161" y="55" width="23" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="star" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dzY-dp-GrD">
+                        <rect key="frame" x="192" y="55" width="23" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="star" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="edP-x6-rYd">
+                        <rect key="frame" x="223" y="55" width="23" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="star" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="06s-GF-u5i">
+                        <rect key="frame" x="254" y="55" width="23" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="star" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zB3-Cp-bJi">
+                        <rect key="frame" x="285" y="55" width="23" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button" image="star" catalog="system"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7l-Qe-hPh">
+                        <rect key="frame" x="0.0" y="0.0" width="145.5" height="109"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="06s-GF-u5i" firstAttribute="leading" secondItem="l7l-Qe-hPh" secondAttribute="trailing" constant="103" id="0xa-KP-gHN"/>
+                    <constraint firstItem="zB3-Cp-bJi" firstAttribute="top" secondItem="6gp-gL-paZ" secondAttribute="bottom" constant="20" id="EC1-SQ-u7G"/>
+                    <constraint firstItem="06s-GF-u5i" firstAttribute="top" secondItem="6gp-gL-paZ" secondAttribute="bottom" constant="20" id="HTh-Gx-pQo"/>
+                    <constraint firstItem="6gp-gL-paZ" firstAttribute="leading" secondItem="l7l-Qe-hPh" secondAttribute="trailing" constant="10" id="OxX-B4-bng"/>
+                    <constraint firstItem="dzY-dp-GrD" firstAttribute="leading" secondItem="l7l-Qe-hPh" secondAttribute="trailing" constant="41" id="Sop-Hx-lfe"/>
+                    <constraint firstItem="edP-x6-rYd" firstAttribute="leading" secondItem="l7l-Qe-hPh" secondAttribute="trailing" constant="72" id="YIQ-Gm-TYT"/>
+                    <constraint firstItem="dzY-dp-GrD" firstAttribute="top" secondItem="6gp-gL-paZ" secondAttribute="bottom" constant="20" id="crC-Hc-gge"/>
+                    <constraint firstItem="zB3-Cp-bJi" firstAttribute="leading" secondItem="l7l-Qe-hPh" secondAttribute="trailing" constant="134" id="jBq-aF-PKz"/>
+                    <constraint firstItem="bka-k5-EmN" firstAttribute="top" secondItem="6gp-gL-paZ" secondAttribute="bottom" constant="20" id="jL3-w6-yaf"/>
+                    <constraint firstItem="edP-x6-rYd" firstAttribute="top" secondItem="6gp-gL-paZ" secondAttribute="bottom" constant="20" id="kII-iD-F94"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="l7l-Qe-hPh" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="4:3" id="7pe-84-nHj"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="6gp-gL-paZ" secondAttribute="trailing" id="DZQ-Qj-IzN"/>
+                <constraint firstItem="l7l-Qe-hPh" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="Kj8-pe-WzE"/>
+                <constraint firstItem="6gp-gL-paZ" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="10" id="XfP-dI-eaa"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="l7l-Qe-hPh" secondAttribute="bottom" id="cgH-xB-KrQ"/>
+                <constraint firstItem="l7l-Qe-hPh" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="iCo-jQ-yub"/>
+            </constraints>
+            <connections>
+                <outlet property="movieImage" destination="l7l-Qe-hPh" id="hA9-Xs-5JZ"/>
+                <outlet property="movieTitle" destination="6gp-gL-paZ" id="h6K-Qo-SxO"/>
+                <outletCollection property="buttons" destination="bka-k5-EmN" collectionClass="NSMutableArray" id="we1-HQ-hvE"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="95.424107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
